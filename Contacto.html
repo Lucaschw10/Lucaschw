@@ -73,35 +73,7 @@
       </div>
     </header>
 
-    <style>
-      .resultado-formulario {
-          background-color: #f8f9fa;
-          padding: 20px;
-          margin: 20px auto;
-          max-width: 600px;
-          border: 1px solid #e0e0e0;
-          border-radius: 5px;
-          display: none;
-      }
-      h2 {
-          text-align: center;
-          color: #007bff;
-      }
-      .campo {
-          font-weight: bold;
-          color: #333;
-      }
-      .form-container {
-          background-color: #ffffff;
-          padding: 20px;
-          margin: 20px auto;
-          max-width: 600px;
-          border: 1px solid #e0e0e0;
-          border-radius: 5px;
-      }
-      .btn-primary {
-          width: 100%;
-      }
+    
   </style>
 </head>
 <body>
@@ -110,7 +82,6 @@
 
       <!-- Formulario -->
       <form id="contactForm">
-        
           <div class="mb-3">
               <label 
               for="nombre" 
@@ -135,8 +106,10 @@
 
           <div class="mb-3">
               <label 
-              for="email" class="form-label">Email (requerido):</label>
-              <input type="email" 
+              for="email" 
+              class="form-label">Email (requerido):</label>
+              <input 
+              type="email" 
               class="form-control" 
               id="email" 
               name="email" required>
@@ -144,7 +117,8 @@
 
           <div class="mb-3">
               <label 
-              for="telefono" class="form-label">Teléfono:</label>
+              for="telefono" 
+              class="form-label">Teléfono:</label>
               <input 
               type="tel" 
               class="form-control" 
@@ -179,32 +153,63 @@
               for="provincia" 
               class="form-label">Provincia:</label>
               <input 
-              type="text" 
+              list="provincias" 
               class="form-control" 
               id="provincia" 
-              name="provincia">
+              name="provincia" required>
+              <datalist id="provincias">
+                  <option value="Buenos Aires">
+                  <option value="Catamarca">
+                  <option value="Chaco">
+                  <option value="Chubut">
+                  <option value="Córdoba">
+                  <option value="Corrientes">
+                  <option value="Entre Ríos">
+                  <option value="Formosa">
+                  <option value="Jujuy">
+                  <option value="La Pampa">
+                  <option value="La Rioja">
+                  <option value="Mendoza">
+                  <option value="Misiones">
+                  <option value="Neuquén">
+                  <option value="Río Negro">
+                  <option value="Salta">
+                  <option value="San Juan">
+                  <option value="San Luis">
+                  <option value="Santa Cruz">
+                  <option value="Santa Fe">
+                  <option value="Santiago del Estero">
+                  <option value="Tierra del Fuego">
+                  <option value="Tucumán">
+              </datalist>
           </div>
 
           <div class="mb-3">
-              <label 
-              for="codigoPostal" 
-              class="form-label">Código Postal:
-            </label>
-              <input 
-              type="text" 
-              class="form-control" 
-              id="codigoPostal" 
-              name="codigoPostal">
+              <label for="codigoPostal" class="form-label">Código Postal:</label>
+              <input type="text" class="form-control" id="codigoPostal" name="codigoPostal">
+          </div>
+          <div>
+            <fieldset>
+              <legend>Choose your monster's features:</legend>
+            
+              <div>
+                <input type="checkbox" id="scales" name="scales" checked />
+                <label for="scales">Scales</label>
+              </div>
+            
+              <div>
+                <input type="checkbox" id="horns" name="horns" />
+                <label for="horns">Horns</label>
+              </div>
+            </fieldset>
           </div>
 
-          <button 
-          type="button" 
-          class="btn btn-primary" 
-          onclick="mostrarDatos()">Enviar</button>
+          <button type="button" class="btn btn-primary" onclick="mostrarDatos()">Enviar</button>
       </form>
   </div>
 
-  <!-- datos del formulario -->
+
+  <!-- Cuadro donde se mostrarán los datos -->
   <div id="resultado" class="resultado-formulario">
       <h2>Datos del Formulario</h2>
       <p><span class="campo">Nombre:</span> <span id="resNombre"></span></p>
