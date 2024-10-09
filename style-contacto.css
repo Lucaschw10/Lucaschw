@@ -1,0 +1,76 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #202020;
+    padding: 15px;
+  }
+  
+  .navbar-brand, .nav-link {
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  /* Estilos del formulario */
+  .form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px;
+  }
+  /* resultado.css */
+
+/* Estilos para el cuadro de resultados del formulario */
+.resultado-formulario {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    display: none; /* Se muestra solo cuando hay datos */
+}
+
+/* Títulos de los resultados */
+h2 {
+    text-align: center;
+    color: #007bff;
+}
+
+/* Estilos para los datos mostrados */
+.campo {
+    font-weight: bold;
+    color: #333;
+}
+
+.valor {
+    color: #555555;
+}

@@ -1,0 +1,53 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #202020;
+    padding: 15px;
+  }
+  
+  .navbar-brand, .nav-link {
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .nav-link:hover {
+    color: #e0e0e0;
+  }
+  
+  /* Estilos del contenido principal */
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #007bff;
+  }
+  
+  /* Asegura que el footer se mantenga al fondo */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Empuja el footer al fondo */
+  }
+  
+  
