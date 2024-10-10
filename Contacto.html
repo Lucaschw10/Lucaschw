@@ -10,7 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-contacto.css" />
   </head>
   <body>
     <header>
@@ -29,7 +29,9 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div 
+            class="collapse navbar-collapse" 
+            id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a
@@ -188,21 +190,31 @@
               <label for="codigoPostal" class="form-label">Código Postal:</label>
               <input type="text" class="form-control" id="codigoPostal" name="codigoPostal">
           </div>
-          <div>
-            <fieldset>
-              <legend>Choose your monster's features:</legend>
-            
-              <div>
-                <input type="checkbox" id="scales" name="scales" checked />
-                <label for="scales">Scales</label>
-              </div>
-            
-              <div>
-                <input type="checkbox" id="horns" name="horns" />
-                <label for="horns">Horns</label>
-              </div>
-            </fieldset>
-          </div>
+          <div class="mb-3">
+            <label for="metodoContacto" class="form-label">Método preferido de contacto:</label>
+            <div>
+                <input type="radio" id="contactoCorreo" name="metodoContacto" value="correo" checked>
+                <label for="contactoCorreo">Correo electrónico</label>
+                <input type="radio" id="contactoPostal" name="metodoContacto" value="postal">
+                <label for="contactoPostal">Correo postal</label>
+                <input type="radio" id="contactoTelefono" name="metodoContacto" value="telefono">
+                <label for="contactoTelefono">Teléfono</label>
+            </div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="tipoSuscripcion" class="form-label">Tipo de suscripción:</label>
+            <div>
+                <input type="checkbox" id="suscripcionNoticias" name="suscripcion" value="noticias">
+                <label for="suscripcionNoticias">Noticias</label>
+                <input type="checkbox" id="suscripcionPromociones" name="suscripcion" value="promociones">
+                <label for="suscripcionPromociones">Promociones</label>
+                <input type="checkbox" id="suscripcionAlertas" name="suscripcion" value="alertas">
+                <label for="suscripcionAlertas">Alertas</label>
+                <input type="checkbox" id="suscripcionEventos" name="suscripcion" value="eventos">
+                <label for="suscripcionEventos">Eventos</label>
+            </div>
+        </div>
 
           <button type="button" class="btn btn-primary" onclick="mostrarDatos()">Enviar</button>
       </form>
@@ -250,8 +262,8 @@
   </script>
 
     <footer class="text-center py-4">
-      <p>&copy; 2024 Lucas Schwallie - Todos los derechos reservados</p>
-      <p>Universidad Nacional del COMAHUE, Viedma Rio Negro</p>
+      <p><h6>&copy; 2024 Lucas Schwallie - Todos los derechos reservados</h6></p>
+      <p><h5>Universidad Nacional del COMAHUE, Viedma Rio Negro</h5></p>
     </footer>
 
     <script
