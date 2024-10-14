@@ -216,6 +216,9 @@
     <div id="resultado" class="resultado-formulario" style="display: none;">
         <h2>Datos del Formulario</h2>
         <div class="cuadro">
+            <div class="campo">CAMPO</div>
+            <div class="valor">VALOR</div>
+            
             <div class="campo">Nombre:</div>
             <div class="valor" id="resNombre"></div>
             
@@ -242,10 +245,10 @@
         </div>
     </div>
 
-    <!-- El script que llena los valores -->
     <script>
         function mostrarDatos() {
             // Obtener datos del formulario
+            
             var nombre = document.getElementById("nombre").value;
             var apellido = document.getElementById("apellido").value;
             var email = document.getElementById("email").value;
