@@ -1,8 +1,11 @@
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('./img/fondo.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
   }
   
   header {
@@ -19,7 +22,6 @@ body {
     color: #000000;
   }
   
-  /* Estilos del formulario */
   .form-container {
     max-width: 600px;
     margin: 30px auto;
@@ -47,18 +49,7 @@ body {
     text-align: center;
     padding: 10px;
   }
-  /* resultado.css */
 
-/* Estilos para el cuadro de resultados del formulario */
-.resultado-formulario {
-    background-color: #f8f9fa;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 600px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    display: none; /* Se muestra solo cuando hay datos */
-}
 
     .cuadro {
         display: grid;
@@ -83,4 +74,13 @@ body {
     }
 
 
+  .resultado-formulario {
+      background-color: #f8f9fa;
+      padding: 20px;
+      margin: 20px auto;
+     max-width: 600px;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      display: none; 
+}
 
