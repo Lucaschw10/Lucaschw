@@ -1,59 +1,125 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('./img/fondo.jpg'); /* Ruta de la imagen */
-    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-  }
-  
-  header {
-    background-color: #202020;
-    padding: 15px;
-  }
-  
-  .navbar-brand, .nav-link {
-    color: rgb(0, 0, 0);
-    font-size: 1.2rem;
-  }
-  
-  .nav-link:hover {
-    color: #000000;
-  }
-  
-  /* Estilos del contenido principal */
-  main {
-    padding: 20px;
-    text-align: center;
-    font-size: 1.1rem;
-    line-height: 1.5;
-  }
-  
-  h1 {
-    color: #007bff;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('./img/fondo.jpg'); /* Ruta de la imagen */
+  background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+header {
+  padding: 0%;
+}
+#Titulo{
+  color: #007bff;
+}
+#encabezado { 
+  position: sticky; 
+  top: 0; 
+  background-color: #202020; 
+  padding: 10px 0;
+  width: 100%; 
+  box-shadow: 0; 
+  z-index: 1000; 
+  text-align: center; /* Centra el contenido dentro del encabezado */
+  text-shadow:  2px 2px 5px #000000; 
+}
+
+.navbar-brand, .nav-link {
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Estilos del contenido principal */
+main {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+#LogoCurza {
+  margin-left: 0%;
+  width: 50px; /* Ajusta el tamaño del logo */
+  height: 50px;
+  animation: spin 4s;
+  color: #ffffff;
+}
+
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+
+h1 {
+  color: #007bff;
+}
+
 html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 5px #000000;
+}
+    /* Estilos para el botón de la flecha */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: #007bff; /* Color de fondo del botón */
+      color: #fff;               /* Color de la flecha */
+      font-size: 24px;
+      border-radius: 50%;        /* Hace que el botón sea circular */
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+      transition: background-color 0.3s;
   }
   
-  main {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-    text-shadow: 2px 2px 5px #000000;
+      /* Cambia el color de fondo al pasar el cursor */
+  .back-to-top:hover {
+    background-color: #0056b3;
   }
-  
-  footer {
-    background-color: #f8f9fa;
-    text-align: center;
-    padding: 10px;
-    margin-top: auto; /* Empuja el footer al fondo */
-  }
-  
-  
+
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #202020;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+footer img {
+  width: 70px; 
+  height: 70px;
+  color: #ffffff;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+

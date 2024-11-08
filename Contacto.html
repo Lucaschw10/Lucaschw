@@ -13,75 +13,62 @@
     <link rel="stylesheet" href="style-contacto.css" />
   </head>
   <body>
-    <header>
-      <div id="navegacion">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">Mi Sitio</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div 
-            class="collapse navbar-collapse" 
-            id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="./index.html"
-                    >Inicio
-                  </a>                    
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    > Más Info
-                    </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="./acercade.html"
-                        >Acerca de Mi</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item disabled"
-                        disabled
-                        href="./Contacto.html"
-                        >Contacto</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
+    <header id="encabezado_Contacto">
+        <h3 id="Titulo"> Formulario de Contacto
     </header>
+    <header>
+        <div id="navegacion">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" 
+                  type="button" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#navbarNav" 
+                  aria-controls="navbarNav" 
+                  aria-expanded="false" 
+                  aria-label="Toggle navigation">
+                      <span 
+                      class="navbar-toggler-icon"></span>
+                  </button>
+                  <div
+                   class="collapse navbar-collapse" 
+                   id="navbarNav">
+                      <ul 
+                      class="navbar-nav">
+                          <li 
+                          class="nav-item">
+                              <a 
+                              class="nav-link" 
+                              href="./index.html">Inicio</a>
+                          </li>
+                          <li 
+                          class="nav-item">
+                              <a 
+                              class="nav-link" 
+                              href="./acercade.html">Acerca de Mi</a>
+                          </li>
+                          <li 
+                          class="nav-item">
+                              <a 
+                              disabled
+                              class="nav-link active" 
+                              aria-current="page"
+                              href="./contacto.html">Contacto</a>
+                          </li>
+                          <!--<li 
+                        class="nav-item">
+                            <a 
+                            class="nav-link" 
+                            href="./Juego.html">Juegos</a>
+                        </li>-->
+                      </ul>
+                </div>
+            </nav>
+        </div>
+  </header>
 
-    
-  </style>
-</head>
 <body>
   <div class="form-container">
-      <h2>Formulario de Contacto</h2>
-
       <!-- Formulario -->
       <form id="contactForm">
           <div class="mb-3">
@@ -133,13 +120,7 @@
             class="btn btn-outline-secondary"
             onclick="borrarTelefono()">borrar</button>
         </div>
-        <script>
-          function borrarTelefono() {
-              document.getElementById("telefono").value = ""; 
-          }
-      </script>
       
-
           <div class="mb-3">
               <label 
               for="edad" 
@@ -212,74 +193,90 @@
         </div>
         <button type="button" class="btn btn-primary" onclick="mostrarDatos()">Enviar</button>
       </form>
+  </div><!-- cuadro que muestra los datos -->
+  <div id="resultado" class="resultado-formulario" style="display: none;">
+      <h2>Datos del Formulario</h2>
+      <table class="cuadro">
+          <tr>
+              <th>CAMPO</th>
+              <th>VALOR</th>
+          </tr>
+          <tr>
+              <td>Nombre:</td>
+              <td id="resNombre"></td>
+          </tr>
+          <tr>
+              <td>Apellido:</td>
+              <td id="resApellido"></td>
+          </tr>
+          <tr>
+              <td>Email:</td>
+              <td id="resEmail"></td>
+          </tr>
+          <tr>
+              <td>Teléfono:</td>
+              <td id="resTelefono"></td>
+          </tr>
+          <tr>
+              <td>Edad:</td>
+              <td id="resEdad"></td>
+          </tr>
+          <tr>
+              <td>Dirección:</td>
+              <td id="resDireccion"></td>
+          </tr>
+          <tr>
+              <td>Provincia:</td>
+              <td id="resProvincia"></td>
+          </tr>
+          <tr>
+              <td>Código Postal:</td>
+              <td id="resCodigoPostal"></td>
+          </tr>
+      </table>
   </div>
-    <!-- cuadro que muestra los datos -->
-    <div id="resultado" class="resultado-formulario" style="display: none;">
-        <h2>Datos del Formulario</h2>
-        <div class="cuadro">
-            <div class="campo">CAMPO</div>
-            <div class="valor">VALOR</div>
-            
-            <div class="campo">Nombre:</div>
-            <div class="valor" id="resNombre"></div>
-            
-            <div class="campo">Apellido:</div>
-            <div class="valor" id="resApellido"></div>
-            
-            <div class="campo">Email:</div>
-            <div class="valor" id="resEmail"></div>
-            
-            <div class="campo">Teléfono:</div>
-            <div class="valor" id="resTelefono"></div>
-            
-            <div class="campo">Edad:</div>
-            <div class="valor" id="resEdad"></div>
-            
-            <div class="campo">Dirección:</div>
-            <div class="valor" id="resDireccion"></div>
-            
-            <div class="campo">Provincia:</div>
-            <div class="valor" id="resProvincia"></div>
-            
-            <div class="campo">Código Postal:</div>
-            <div class="valor" id="resCodigoPostal"></div>
-        </div>
+  </div>
     </div>
 
     <script>
-        function mostrarDatos() {
-            // Obtener datos del formulario
-            
-            var nombre = document.getElementById("nombre").value;
-            var apellido = document.getElementById("apellido").value;
-            var email = document.getElementById("email").value;
-            var telefono = document.getElementById("telefono").value;
-            var edad = document.getElementById("edad").value;
-            var direccion = document.getElementById("direccion").value;
-            var provincia = document.getElementById("provincia").value;
-            var codigoPostal = document.getElementById("codigoPostal").value;
-
-            // Mostrar los datos en el cuadro
-            document.getElementById("resNombre").innerText = nombre;
-            document.getElementById("resApellido").innerText = apellido;
-            document.getElementById("resEmail").innerText = email;
-            document.getElementById("resTelefono").innerText = telefono;
-            document.getElementById("resEdad").innerText = edad;
-            document.getElementById("resDireccion").innerText = direccion;
-            document.getElementById("resProvincia").innerText = provincia;
-            document.getElementById("resCodigoPostal").innerText = codigoPostal;
-
-            // Mostrar el cuadro
-            document.getElementById("resultado").style.display = "block";
-        }
+      function mostrarDatos() {
+      // Obtener datos del formulario
+        var nombre = document.getElementById("nombre").value;
+        var apellido = document.getElementById("apellido").value;
+        var email = document.getElementById("email").value;
+        var telefono = document.getElementById("telefono").value;
+        var edad = document.getElementById("edad").value;
+        var direccion = document.getElementById("direccion").value;
+        var provincia = document.getElementById("provincia").value;
+        var codigoPostal = document.getElementById("codigoPostal").value;
+        
+        // Mostrar los datos en la tabla
+        document.getElementById("resNombre").innerText = nombre;
+        document.getElementById("resApellido").innerText = apellido;
+        document.getElementById("resEmail").innerText = email;
+        document.getElementById("resTelefono").innerText = telefono;
+        document.getElementById("resEdad").innerText = edad;
+        document.getElementById("resDireccion").innerText = direccion;
+        document.getElementById("resProvincia").innerText = provincia;
+        document.getElementById("resCodigoPostal").innerText = codigoPostal;
+        
+        // Mostrar el cuadro
+        document.getElementById("resultado").style.display = "block";    
+       }
     </script>
 </body>
-
-</body>
-    <footer class="text-center py-4">
-      <p><h6>&copy; 2024 Lucas Schwallie - Todos los derechos reservados</h6></p>
-      <p><h5>Universidad Nacional del COMAHUE, Viedma Rio Negro</h5></p>
-    </footer>
+  <!-- agrego aside porque es una parte que esta antes del pie de la pagina qe es el footer, se usa basicamente para informacion no tan importante para la pagina... dentro, tiene 2 botones que hacen 2 cosas distintas cada uno -->  
+  <aside>
+    <!--agrego un "a" para navegar, dentro de eso un boton para que sea mas bonito jeje... uso en el atributo src #navegacion para que te dirija al principio de la pagina a donde esta el header... -->
+   <!-- Flecha para volver al inicio -->
+    <a href="#navegacion" class="back-to-top" title="Volver al inicio">
+        ⬆️
+    </a>
+</aside>
+<footer>
+  <img src="img/Logo-curza.jpg" alt="Símbolo CURZA">
+  <p>© 2024 Lucas Schwallie - Todos los derechos reservados | Universidad Nacional del COMAHUE, Viedma Río Negro</p>
+</footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
