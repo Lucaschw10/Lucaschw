@@ -1,39 +1,35 @@
-
+/* General */
 html, body {
   height: 100%;
   margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   font-family: Arial, sans-serif;
-}
-
-/* Fondo y cuerpo */
-body {
-  margin: 0;
-  padding: 0;
   background-image: url('./img/fondo.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
 /* Header */
 header {
-  padding: 0px;
+  padding: 0;
 }
 
-#encabezado_Acercade { 
-  position: sticky; 
-  top: 0; 
-  background-color:#202020; 
+#encabezado_Acercade {
+  position: sticky;
+  top: 0;
+  background-color: #202020;
   padding: 10px 0;
-  width: 100%; 
-  box-shadow: 0;
-  z-index: 1000; 
-  text-align: center; /* Centra el contenido dentro del encabezado */
-  text-shadow:  2px 2px 5px #000000; 
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center;
+  text-shadow: 2px 2px 5px #000000;
 }
-#Titulo{
+
+#Titulo {
   color: #007bff;
   padding: 5px;
 }
@@ -42,37 +38,12 @@ header {
 .navbar-brand, .nav-link {
   color: grey;
   font-size: 1.2rem;
-  position:sticky ;
 }
 
 .nav-link:hover {
   color: #007bff;
 }
 
-/* Botón "Más información" */
-.masinfo {
-  background-color: #007bff;
-}
-
-/* Encabezado */
-#head {
-  text-align: center;
-  margin-top: 30px;
-}
-
-/* Títulos */
-h2 {
-  color: #007bff;
-}
-
-/* Texto */
-p, div {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  color: #202020;
-}
-
-/* Imagen de perfil */
 #foto {
   text-align: center;
   margin-top: 20px;
@@ -83,6 +54,9 @@ p, div {
   border-radius: 50%;
 }
 
+
+
+
 /* Contenido principal */
 main {
   flex: 1;
@@ -90,31 +64,16 @@ main {
   text-align: center;
   text-shadow: 2px 2px 5px #000000;
   color: #000000;
+  transition: height .5s;
+}
+.hide {
+  display: none;
+}
+.show{
+  display: block;
 }
 
-    /* Estilos para el botón de la flecha */
-.back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    background-color: #007bff; /* Color de fondo del botón */
-    color: #fff;               /* Color de la flecha */
-    font-size: 24px;
-    border-radius: 50%;        /* Hace que el botón sea circular */
-    text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
-    transition: background-color 0.3s;
-}
 
-    /* Cambia el color de fondo al pasar el cursor */
-.back-to-top:hover {
-  background-color: #0056b3;
-}
 
 /* Footer */
 footer {
@@ -128,7 +87,7 @@ footer {
 }
 
 footer img {
-  width: 70px; 
+  width: 70px;
   height: 70px;
 }
 
@@ -138,6 +97,25 @@ footer p {
   width: 100%;
   color: white;
 }
+/* Botón de volver al inicio */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
 
-
-
+.back-to-top:hover {
+  background-color: #0056b3;
+}
