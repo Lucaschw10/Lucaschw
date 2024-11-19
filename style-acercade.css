@@ -23,7 +23,7 @@ header {
   background-color: #202020;
   padding: 10px 0;
   width: 100%;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   text-align: center;
   text-shadow: 2px 2px 5px #000000;
@@ -54,9 +54,6 @@ header {
   border-radius: 50%;
 }
 
-
-
-
 /* Contenido principal */
 main {
   flex: 1;
@@ -72,8 +69,6 @@ main {
 .show{
   display: block;
 }
-
-
 
 /* Footer */
 footer {

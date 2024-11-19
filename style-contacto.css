@@ -3,10 +3,10 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('./img/fondo.jpg'); /* Ruta de la imagen */
-  background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-image: url('./img/fondo.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
 }
 
 /* Header */
@@ -21,8 +21,8 @@ header {
   width: 100%; 
   box-shadow: 0; 
   z-index: 1000;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center; /* Centra el contenido dentro del encabezado */
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+  text-align: center; 
   text-shadow:  2px 2px 5px #000000; 
 }
 #Titulo{
@@ -50,6 +50,27 @@ header {
   border: 1px solid #007bff;
   border-radius: 5px;
 }
+/* Ajuste de márgenes y espaciado */
+.contact-preference, .subscription-type {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+  
+}
+
+/* Etiquetas de formulario */
+.contact-preference label, .subscription-type label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Opciones alineadas horizontalmente */
+.form-check {
+  display: inline-block;
+  margin-right: 20px;
+}
 
 /* Botones */
 button {
@@ -60,7 +81,7 @@ button {
 
 /* Resultado del formulario */
 .resultado-formulario {
-  background-color: #ffffff;
+  background-color: grey;
   padding: 20px;
   margin: 20px auto;
   max-width: 600px;
@@ -136,11 +157,11 @@ footer p {
   justify-content: center;
   width: 50px;
   height: 50px;
-  background-color:#007bff; /* Color de fondo del botón */
-  color: #fff;               /* Color de la flecha */
+  background-color:#007bff; 
+  color: #fff;              
   font-size: 24px;
-  border-radius: 50%;        /* Hace que el botón sea circular */
+  border-radius: 50%;        
   text-decoration: none;
-  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2); 
   transition: background-color 0.3s;    
 }

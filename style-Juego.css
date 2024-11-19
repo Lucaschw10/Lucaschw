@@ -1,0 +1,80 @@
+/* Estilos globales */
+html,body {
+    height: 100%; /* La altura de la pantalla completa */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./img/fondo.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+main{
+  flex: 1;
+}
+#encabezado { 
+  position: sticky; 
+  top: 0; 
+  color: #007bff;
+  background-color: #202020; 
+  padding: 10px 0;
+  width: 100%; 
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2); /* Sombra para el encabezado */
+  z-index: 1000; 
+  text-align: center; 
+  text-shadow: 2px 2px 5px #000000; 
+}
+.navbar-brand, .nav-link {
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+.Juego-text{
+color: #007bff;
+}
+/* Footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #202020;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+footer img {
+  width: 70px; 
+  height: 70px;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+/* Estilos para el botón de la flecha */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color:#007bff; /* Color de fondo del botón */
+  color: #fff;               /* Color de la flecha */
+  font-size: 24px;
+  border-radius: 50%;        /* Hace que el botón sea circular */
+  text-decoration: none;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+  transition: background-color 0.3s;    
+}
